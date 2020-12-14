@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   text-align: center;
 }
 
@@ -21,9 +21,14 @@
 .logo {
   font-size: xx-large;
   color: white;
+  background-color: white;
   text-align: center;
   top: 50%;
   width: 90%;
+}
+.logo img {
+  max-height: 80px;
+  padding-right: 60px;
 }
 
 .navbar {
@@ -57,7 +62,8 @@
   transition: 350ms;
 }
 
-.nav-text, .nav-sub-text {
+.nav-text,
+.nav-sub-text {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -72,7 +78,8 @@
   display: none;
 }
 
-.nav-text a, .nav-sub-text a {
+.nav-text a,
+.nav-sub-text a {
   text-decoration: none;
   color: #f5f5f5;
   font-size: 18px;
@@ -85,7 +92,7 @@
 }
 
 .nav-text a:hover {
-  background-color: #1a83ff;
+  background-color: #28a745 !important;
   color: white;
   text-decoration: none;
 }
@@ -106,9 +113,36 @@
 span {
   margin-left: 16px;
 }
+/*background behind logo and menu*/
+.ioNZru {
+  background: white !important;
+}
+/*hambuger menu icon*/
+svg {
+  color: black !important;
+}
+/*toggle menu background*/
+.jwAxTp {
+  background: #fff;
+}
+.dMLVkQ {
+  background: #fff;
+  color: #000 !important;
+}
+.dMLVkQ:hover {
+  background: #fff !important;
+  color: #000 !important;
+  border-left: 4px solid #28a745 !important;
+}
+a:hover {
+  color: #dcdcdc;
+}
+.xeejZ:hover {
+  background: #28a745 !important;
+}
 
 .controls {
-  display:flex;
+  display: flex;
   justify-content: space-around;
   padding-top: 40px;
 }
@@ -118,9 +152,9 @@ span {
   height: 60px;
 }
 
-.rectangle{
-  width:500px;
-  height:300px;
+.rectangle {
+  width: 500px;
+  height: 300px;
   border-radius: 10px;
   border: 2px solid blue;
   align-self: center;
@@ -138,4 +172,22 @@ span {
 .game-play button {
   margin-left: 20px;
   padding: 7px;
+}
+
+.card-body {
+  background-color: #28a745;
+  color: white;
+}
+.card-title {
+  margin-bottom: 0.75rem;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+}
+.mb-2,
+.my-2 {
+  display: inline-flex;
+  height: 18rem;
+  margin-top: 10px;
 }
