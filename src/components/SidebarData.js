@@ -62,7 +62,7 @@ export const SidebarData = [
   },
   {
     title: 'How To Play',
-    path: '/support',
+    path: '/instructions',
     icon: <IoIcons.IoMdHelpCircle />
   }
 ];

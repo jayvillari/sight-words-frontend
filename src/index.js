@@ -1,18 +1,9 @@
-<<<<<<< HEAD
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
-=======
-import React from "react";
-import ReactDOM from "react-dom";
-import "./index.css";
-import "bootstrap/dist/css/bootstrap.css";
-import App from "./App";
-import reportWebVitals from "./reportWebVitals";
->>>>>>> 48db63a4335ed183a990125845d73b3564f6c635
 
 ReactDOM.render(
   <React.StrictMode>

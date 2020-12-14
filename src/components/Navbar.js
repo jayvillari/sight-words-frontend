@@ -54,7 +54,7 @@ const NavBar = () => {
             <FaIcons.FaBars onClick={showSidebar} />
           </NavIcon>
           <div className="logo">
-            Sight Words
+            <img src="/SiteWordsLogo.png" alt="Site Words"/>
         </div>
         </Nav>
         <SidebarNav sidebar={sidebar}>
