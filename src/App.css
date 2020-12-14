@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+.container {
+  background-color: white;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.game-play button {
+  margin-left: 20px;
+  padding: 7px;
+}
