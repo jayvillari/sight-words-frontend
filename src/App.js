@@ -2,7 +2,6 @@ import './App.css';
 import Game from './components/Game'
 import Child from './components/Child'
 import Adult from './components/Adult'
-import Controls from './components/Controls'
 import Navbar from './components/Navbar';
 import Instructions from './components/Instructions';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
@@ -19,7 +18,6 @@ function App() {
           </Switch>
         <Game/>
       </Router>
-      <Controls/>
     </div>
   );
 }
