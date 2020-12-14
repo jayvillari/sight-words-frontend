@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import Word from './Word';
-import Button from 'react-bootstrap/Button';
 
 const baseURI = "http://localhost:3000/words";
 
@@ -9,7 +8,7 @@ class WordList extends Component {
     constructor() {
       super();
       this.state = {
-        words: [{word: 'test'}, {word: 'test'}],
+        words: [], //[{word: 'default'}],
         index: 0,
       }
     }
@@ -18,7 +17,6 @@ class WordList extends Component {
       this.getWords().then(result => this.setState({
         words: result.data[0]
       }))
-      //console.log(this.state.words)
     }
   
     getWords=() => {

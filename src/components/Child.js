@@ -22,7 +22,6 @@ class Child extends Component {
     this.setState({
       currentCardIndex: this.state.currentCardIndex + 1,
       })
-      console.log(this.state.currentCardIndex);
     }
 }
 

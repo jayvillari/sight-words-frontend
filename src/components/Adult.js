@@ -1,13 +1,28 @@
 import React, { Component } from 'react';
+import Controls from "./Controls";
+import WordList from "./WordList";
 
 class Adult extends Component {
-    render() {
+    constructor() {
+        super();
+        this.state = {
+          currentCardIndex: 0,
+          skipCardIndex: ''
+        }
+      }
+      render() {
         return (
-            <>
-                <h3>Adult Component</h3>
-            </>
-        )
-    }
+          <>
+            <WordList currentIndex={this.state.currentCardIndex}/>
+            <Controls nextWord={this.nextWord}/>
+          </>
+        );
+      }
+      nextWord = () => {
+        this.setState({
+          currentCardIndex: this.state.currentCardIndex + 1,
+          })
+        }
 }
 
 export default Adult;
