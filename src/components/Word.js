@@ -7,7 +7,7 @@ class Word extends Component {
       <>
         <Card bg="green" style={{ width: "18rem" }} className="mb-2">
           <Card.Body>
-            <Card.Title>WOULD</Card.Title>
+            <Card.Title>{this.words}</Card.Title>
           </Card.Body>
         </Card>
       </>
