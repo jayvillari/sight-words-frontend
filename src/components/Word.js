@@ -1,13 +1,18 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
+import Card from "react-bootstrap/Card";
 
 class Word extends Component {
-    render() {
-        return (
-            <>
-                <h6>Word</h6>
-            </>
-        )
-    }
+  render() {
+    return (
+      <>
+        <Card bg="green" style={{ width: "18rem" }} className="mb-2">
+          <Card.Body>
+            <Card.Title>WOULD</Card.Title>
+          </Card.Body>
+        </Card>
+      </>
+    );
+  }
 }
 
 export default Word;

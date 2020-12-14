@@ -1,15 +1,14 @@
-import React, { Component } from 'react';
-import WordList from './WordList';
+import React, { Component } from "react";
+import WordList from "./WordList";
 
 class Child extends Component {
-    render() {
-        return (
-            <>
-                <h3>Child Component</h3>
-                <WordList/>
-            </>
-        )
-    }
+  render() {
+    return (
+      <>
+        <WordList />
+      </>
+    );
+  }
 }
 
 export default Child;
