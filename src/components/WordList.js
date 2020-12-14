@@ -8,13 +8,12 @@ class WordList extends Component {
     constructor() {
       super();
       this.state = {
-        words: '',
-        index: ''
+        words: [{word: 'test'}],
+        index: 0
       }
     }
 
     componentDidMount() {
-      // fetch the project name, once it retrieves resolve the promsie and update the state. 
       this.getWords().then(result => this.setState({
         words: result.data[0]
       }))
@@ -28,7 +27,7 @@ class WordList extends Component {
   
     render() {
       return (
-        <Word words={this.state.words} index={1}/>
+        <Word words={this.state.words} index={this.state.index}/>
       )
     }
 }
