@@ -4,6 +4,7 @@ import Child from './components/Child'
 import Adult from './components/Adult'
 import Controls from './components/Controls'
 import Navbar from './components/Navbar';
+import Instructions from './components/Instructions';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 function App() {
@@ -12,11 +13,11 @@ function App() {
       <Router>
         <Navbar/>
           <Switch>
-            <Route path='/'/>
+            <Route path="/child/:mode" component={Child}/>
+            <Route path="/adult/:mode" component={Adult}/>
+            <Route path="/instructions" component={Instructions}/>
           </Switch>
         <Game/>
-        <Child/>
-        <Adult/>
       </Router>
       <Controls/>
     </div>
