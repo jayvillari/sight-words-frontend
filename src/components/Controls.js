@@ -7,7 +7,7 @@ class Controls extends Component {
                 <div className="controls">
                     <Button variant="danger" size="lg" className="control-buttons">Incorrect</Button>{' '}                  
                     <Button variant="secondary" size="lg"className="control-buttons">Skip</Button>{' '}
-                    <Button variant="success" size="lg" className="control-buttons">Correct</Button>{' '}
+                    <Button onClick={this.props.nextWord} variant="success" size="lg" className="control-buttons">Correct</Button>{' '}
                 </div>
             </>
         )
