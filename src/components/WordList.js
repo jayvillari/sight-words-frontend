@@ -8,7 +8,7 @@ class WordList extends Component {
   constructor() {
     super();
     this.state = {
-      words: [{ word: "default" }], //[],
+      words: [], //[{ word: "default" }],
       index: 0,
     };
   }
@@ -23,11 +23,10 @@ class WordList extends Component {
 
   getWords = () => {
     let urlForGet = `${baseURI}`;
-    if (this.props.isChild)
-    {
-        urlForGet = urlForGet + '/child';
+    if (this.props.isChild) {
+      urlForGet = urlForGet + "/child";
     } else {
-        urlForGet = urlForGet + '/adult';
+      urlForGet = urlForGet + "/adult";
     }
     return axios.get(urlForGet);
   };

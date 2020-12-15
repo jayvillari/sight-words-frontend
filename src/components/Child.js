@@ -7,22 +7,22 @@ class Child extends Component {
     super();
     this.state = {
       currentCardIndex: 0,
-      skipCardIndex: ''
-    }
+      skipCardIndex: "",
+    };
   }
   render() {
     return (
       <>
-        <WordList currentIndex={this.state.currentCardIndex} isChild={true}/>
-        <Controls nextWord={this.nextWord}/>
+        <WordList currentIndex={this.state.currentCardIndex} isChild={true} />
+        <Controls nextWord={this.nextWord} correctWord={this.correctWord} />
       </>
     );
   }
   nextWord = () => {
     this.setState({
       currentCardIndex: this.state.currentCardIndex + 1,
-      })
-    }
+    });
+  };
 }
 
 export default Child;

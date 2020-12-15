@@ -172,6 +172,14 @@ a:hover {
 .card {
   margin: 10px;
 }
+.game {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+.game-button2 {
+  margin-top: 10px;
+}
 .game-play button {
   margin-left: 20px;
   padding: 7px;
@@ -193,4 +201,8 @@ a:hover {
   display: inline-flex;
   height: 18rem;
   margin-top: 10px;
+}
+
+.endgame {
+  padding-top: 10px;
 }
