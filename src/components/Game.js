@@ -1,17 +1,19 @@
 import React, { Component } from "react";
-import Select from "react-dropdown-select";
-
-export const App = ({ options }) => (
-  <Select
-    multi
-    options={options}
-    onChange={(values) => this.onChange(values)}
-  />
-);
+import Button from "react-bootstrap/Button";
+import EndGame from "./EndGame";
 
 class Game extends Component {
   render() {
-    return <></>;
+    return (
+      <div className="game">
+        <div className="game-button1">
+          <Button href="/child/auto" variant="success" size="lg">
+            Start Game
+          </Button>
+        </div>
+        <EndGame />
+      </div>
+    );
   }
 }
 
