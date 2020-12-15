@@ -13,7 +13,7 @@ class Adult extends Component {
       render() {
         return (
           <>
-            <WordList currentIndex={this.state.currentCardIndex}/>
+            <WordList currentIndex={this.state.currentCardIndex} isChild={false}/>
             <Controls nextWord={this.nextWord}/>
           </>
         );

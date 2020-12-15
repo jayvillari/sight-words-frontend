@@ -13,7 +13,7 @@ class Child extends Component {
   render() {
     return (
       <>
-        <WordList currentIndex={this.state.currentCardIndex}/>
+        <WordList currentIndex={this.state.currentCardIndex} isChild={true}/>
         <Controls nextWord={this.nextWord}/>
       </>
     );
