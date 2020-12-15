@@ -8,8 +8,9 @@ class WordList extends Component {
   constructor() {
     super();
     this.state = {
-      words: [{ word: "default" }], //[],
+      words: [], //[{ word: "default" }]
       index: 0,
+      numWords: 0,
     };
   }
 
@@ -17,6 +18,7 @@ class WordList extends Component {
     this.getWords().then((result) =>
       this.setState({
         words: result.data[0],
+        numWords: result.data[0].length,
       })
     );
   }
