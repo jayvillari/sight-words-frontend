@@ -54,8 +54,10 @@ const NavBar = () => {
             <FaIcons.FaBars onClick={showSidebar} />
           </NavIcon>
           <div className="logo">
-            <img src="/SiteWordsLogo.png" alt="Site Words"/>
-        </div>
+            <a href="/home">
+              <img src="/SiteWordsLogo.png" alt="Site Words" />
+            </a>
+          </div>
         </Nav>
         <SidebarNav sidebar={sidebar}>
           <SidebarWrap>

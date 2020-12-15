@@ -10,16 +10,18 @@ class Instructions extends Component {
   render() {
     return (
       <>
-        <div class="header">
-          <h3>How to Play</h3>
-          <p>
-            Adult and Child games can be played either Manually, where the user
-            decides if the answer is Correct, Incorrect or you would like to
-            skip that word. Users can also choose to Autoplay, where the user
+        <Card style={{ width: "30rem" }}>
+          <Card.Header>
+            <h3>How to Play</h3>
+          </Card.Header>
+          <Card.Text>
+            Adult and Child games can be played in either Manual or Autoplay.
+            Manual, where the user decides if the answer is Correct, Incorrect
+            or you would like to skip that word. Or Autoplay, where the user
             says the word and the app recorgizes the correct word through voice
             recognition.
-          </p>
-        </div>
+          </Card.Text>
+        </Card>
         <Container fluid>
           <Row>
             <Col>
