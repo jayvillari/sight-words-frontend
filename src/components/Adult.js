@@ -1,6 +1,7 @@
-import React, { Component } from 'react';
-import Controls from "./Controls";
+import React, { Component } from "react";
 import WordList from "./WordList";
+import Controls from "./Controls";
+//import ReactCardFlip from "react-card-flip";
 
 class Adult extends Component {
     constructor() {
