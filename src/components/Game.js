@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Button from "react-bootstrap/Button";
-import EndGame from "./EndGame";
 
 class Game extends Component {
   render() {
@@ -11,7 +10,6 @@ class Game extends Component {
             Start Game
           </Button>
         </div>
-        <EndGame />
       </div>
     );
   }
