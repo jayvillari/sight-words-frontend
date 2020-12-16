@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import axios from "axios";
 import Word from "./Word";
+import { getWords } from "./Api";
 
 const baseURI = "http://localhost:3000";
+console.log(getWords());
 
 class WordList extends Component {
   constructor() {

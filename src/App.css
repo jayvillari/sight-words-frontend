@@ -209,8 +209,9 @@ a:hover {
 
 .flip-card {
   transform-style: preserve-3d;
-  transition: all 1.5s ease-in-out;
+  transition: all 1s ease-in-out;
   cursor: pointer;
+  box-shadow: 0 15px 50px rgba(0,0,0,0.4);
 }
 
 .flip-card:hover {
@@ -222,5 +223,5 @@ a:hover {
 }
 
 .back {
-  transform: rotateY(180deg);
+  transform: rotateY(-180deg);
 }

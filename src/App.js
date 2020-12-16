@@ -13,6 +13,7 @@ function App() {
       <Router>
         <Navbar />
         <Switch>
+          <Route exact path="/" component={Game} />
           <Route path="/home" component={Game} />
           <Route path="/child/:mode" component={Child} />
           <Route path="/adult/:mode" component={Adult} />
