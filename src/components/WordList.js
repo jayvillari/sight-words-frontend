@@ -18,13 +18,21 @@ class WordList extends Component {
 
   componentDidMount() {
     const that = this;
+    if (!this.props.isChild){
+      that.setState({
+        words: getWords(),
+        numWords: 10,
+      })
+      that.props.setNumWords(10);
+    } else {
     this.getWords().then((result) => {
       that.setState({
         words: result.data[0],
         numWords: result.data[0].length,
       }) 
+      //console.log(result.data[0]);
       that.props.setNumWords(result.data[0].length);
-    });
+    });}
   }
 
   getWords = () => {
