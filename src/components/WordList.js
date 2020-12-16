@@ -15,12 +15,14 @@ class WordList extends Component {
   }
 
   componentDidMount() {
-    this.getWords().then((result) =>
-      this.setState({
+    const that = this;
+    this.getWords().then((result) => {
+      that.setState({
         words: result.data[0],
         numWords: result.data[0].length,
-      })
-    );
+      }) 
+      that.props.setNumWords(result.data[0].length);
+    });
   }
 
   getWords = () => {
