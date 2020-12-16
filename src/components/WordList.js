@@ -38,7 +38,7 @@ class WordList extends Component {
   render() {
     return (
       <>
-        <Word words={this.state.words} index={this.props.currentIndex} />
+        <Word words={this.state.words} index={this.props.currentIndex} isChild={this.props.isChild}/>
       </>
     );
   }
