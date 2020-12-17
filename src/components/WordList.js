@@ -3,7 +3,7 @@ import axios from "axios";
 import Word from "./Word";
 import { getWords } from "./Api";
 
-const baseURI = "http://localhost:3000";
+const baseURI = process.env.REACT_APP_BACKEND_URL;
 
 class WordList extends Component {
   constructor() {
