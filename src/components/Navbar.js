@@ -8,7 +8,6 @@ import styled from "styled-components";
 import SubMenu from "./SubMenu";
 
 const Nav = styled.div`
-  background: #15171c;
   height: 80px;
   display: flex;
   justify-content: flex-start;
@@ -25,7 +24,6 @@ const NavIcon = styled(Link)`
 `;
 
 const SidebarNav = styled.nav`
-  background: #15171c;
   width: 250px;
   height: 100vh;
   display: flex;
