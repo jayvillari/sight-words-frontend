@@ -13,7 +13,7 @@ export const SidebarData = [
   },
   {
     title: 'Child Game',
-    path: '/child',
+    path: '#',
     icon: <FaIcons.FaChild />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
@@ -35,7 +35,7 @@ export const SidebarData = [
   },
   {
     title: 'Adult Game',
-    path: '/adult',
+    path: '#',
     icon: <BsIcons.BsFillPersonFill />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
@@ -54,11 +54,6 @@ export const SidebarData = [
           cName: 'sub-nav'
         },
       ]
-  },
-  {
-    title: 'Login/Logout',
-    path: '/login',
-    icon: <RiIcons.RiLoginBoxLine />,
   },
   {
     title: 'How To Play',

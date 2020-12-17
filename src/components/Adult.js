@@ -105,7 +105,7 @@ class Adult extends Component {
   /////////////////////////////////////////////////////
   restartGame = () => {
     this.setState({
-      currentCardIndex: 0,
+      currentCardIndex: this.state.currentCardIndex + 1,
       numCorrect: 0,
       numIncorrect: 0,
       numSkipped: 0,

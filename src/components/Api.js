@@ -20,7 +20,6 @@ function getWords()
             getDefinition(currentWord, URI);
         }
     });
-
     return definitions;
 }
 
