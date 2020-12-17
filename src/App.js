@@ -4,9 +4,6 @@ import Child from "./components/Child";
 import Adult from "./components/Adult";
 import Navbar from "./components/Navbar";
 import Instructions from "./components/Instructions";
-import Dictaphone from "./components/Dictaphone";
-
-//import Login from "./components/Login";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
