@@ -32,15 +32,7 @@ Application offering Sight Word practice for Children and Word expansion for Tee
 ### Planning
 
 | Day 1 | Day 2| Day 3| Day 4| Day 5 | Day 6 |
-| Git Hub set up| Initialize Bootstrap | Design Implementation | Implement Control Button Logic | Implement Score Logic | Heroku Launch |
-|Research React Bootstrap| Design Logo/Theme |Working Nav Buttons | Define Score Logic | Work on Voice Recognition |
-|Plan Components and Architecture | Initial Component Code | Card Data Display | Work on Authentication | Implement Card w/ Definition and Action|
-|Create DB| | Hitting DB | Create End Game | Finalize Readme|
-|Finalize Wireframes ||Instructions Component Code | Develop Presentation |
-|Outline MVP, Stretch || Define Button Logic | Connect API for Adult Game |
-|Plan Timeline || Display Adult Card Content|
-|Create Word Lists|
-|Develop User Stories|
+| <ul><li>Git Hub set up</li><li>Research React</li><li>Plan Components and Architecture</li><li>Create DB</li><li>Finalize Wireframes</li><li>Outline MVP, Stretch</li></ul> | <ul><li>Plan Timeline </li><li>Create Word Lists</li><li>Develop User Stories</li><li>Initialize Bootstrap</li><li> Bootstrap Research</li></ul> | <ul><li>Design Implementation</li><li>Design Logo/Theme </li><li>Initial Component Code</li><li> Hitting DB</li></ul> | <ul><li>Implement Control Button Logic</li><li>Working Nav Buttons</li><li>Card Data Display </li><li>Create End Game</li><li>Instructions Component Code</li><li>Define Button Logic</li><li>Display Adult Content Card</li></ul> | <ul><li>Implement Score Logic</li><li>Define Score Logic </li><li>Work on Authentication </li><li>Finalize Readme</li><li>Develop Presentation </li><li>Connect API for Adult Game</li></ul> | <ul><li>Heroku Launch</li><li>Work on Voice Recognition </li><li>Implement Card w/ Definition and Action</li></ul>|
 
 ### User Stories
 
@@ -80,6 +72,7 @@ _Stretch_
 - API (Calling adult words)
   ** https://random-word-api.herokuapp.com/home
   ** https://dictionaryapi.com/products/api-collegiate-dictionary
+  \*\* Internal Class Words
 
 ## <br>
 
@@ -107,5 +100,5 @@ _Stretch_
 ### Future
 
 - Incorporate Spanish Language words
-- Implementing Authentication for access to the Adult words game (due to API call)
+- Implementing Authentication for access to the Adult words game
 - Implementing Weekly Game Calls for Child version
