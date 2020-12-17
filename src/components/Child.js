@@ -114,9 +114,17 @@ class Child extends Component {
     })
   }
 
+  /////////////////////////////////////////////////////
+  /// Function to pass to the dictaphone to determine
+  /// whether the spoken word matches the displayed 
+  /// word.
+  /////////////////////////////////////////////////////
+  
   checkSpokenWord = (spokenWord) => {
-    //console.log(spokenWord);
-    //console.log(this.state.words[this.state.currentCardIndex].word);
+
+    // DEBUG - console.log(spokenWord);
+    // DEBUG - console.log(this.state.words[this.state.currentCardIndex].word);
+
     if (spokenWord === this.state.words[this.state.currentCardIndex].word){
       this.markAsCorrect();
     } else {
