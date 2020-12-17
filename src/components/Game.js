@@ -6,7 +6,7 @@ class Game extends Component {
     return (
       <div className="game">
         <div className="game-button1">
-          <Button href="/child/auto" variant="success" size="lg">
+          <Button href="/child/manual" variant="success" size="lg">
             Start Game
           </Button>
         </div>

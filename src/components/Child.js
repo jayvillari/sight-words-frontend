@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Controls from "./Controls";
 import WordList from "./WordList";
 import EndGame from "./EndGame";
+import Dictaphone from "./Dictaphone";
 
 class Child extends Component {
   constructor() {
@@ -14,20 +15,27 @@ class Child extends Component {
       numWords:0,
       counter: 1,
       gameOver: false,
+      words: [],
     }
   }
   render() {
     const isGameOver = this.state.gameOver;
-    let card;
+    const currentLocation = window.location.href;
+    let card, controls;
     if (!isGameOver) {
-      card = <WordList currentIndex={this.state.currentCardIndex} isChild={true} setNumWords={this.setNumWords}/>;
+      card = <WordList currentIndex={this.state.currentCardIndex} isChild={true} setNumWords={this.setNumWords} setWords={this.setWordsArray}/>;
     } else {
       card = <EndGame numCorrect={this.state.numCorrect} numIncorrect={this.state.numIncorrect} restartGame={this.restartGame}/>;
     }
+    if (currentLocation.includes("/child/auto")) {
+      controls = <Dictaphone checkSpokenWord={this.checkSpokenWord} markAsCorrect={this.markAsCorrect} markAsIncorrect={this.markAsIncorrect} skipWord={this.skipWord} isGameOver={this.state.gameOver}/>;
+    } else {
+      controls = <Controls markAsCorrect={this.markAsCorrect} markAsIncorrect={this.markAsIncorrect} skipWord={this.skipWord} isGameOver={this.state.gameOver}/>;
+    }
     return (
       <>
-        {card}
-        <Controls markAsCorrect={this.markAsCorrect} markAsIncorrect={this.markAsIncorrect} skipWord={this.skipWord} isGameOver={this.state.gameOver}/>    
+        {card}   
+        {controls}
       </>
     );
   }
@@ -103,6 +111,22 @@ class Child extends Component {
       numSkipped: 0,
       counter: 1,
       gameOver: false,
+    })
+  }
+
+  checkSpokenWord = (spokenWord) => {
+    //console.log(spokenWord);
+    //console.log(this.state.words[this.state.currentCardIndex].word);
+    if (spokenWord === this.state.words[this.state.currentCardIndex].word){
+      this.markAsCorrect();
+    } else {
+      this.markAsIncorrect();
+    }
+  }
+
+  setWordsArray = (arrWords) => {
+    this.setState({
+      words: arrWords,
     })
   }
 }

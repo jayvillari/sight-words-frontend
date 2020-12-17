@@ -224,5 +224,22 @@ a:hover {
 
 .back {
   transform: rotateY(-180deg);
-  margin-top: -100px;
+  margin-top: -120px;
+}
+
+.disable-button {
+  cursor: not-allowed;
+  pointer-events: none;
+
+  /*Button disabled - CSS color class*/
+  color: #c0c0c0;
+  background-color: #ffffff;
+}
+
+.spoken-word {
+  margin-top:25px;
+}
+
+.spoken-word-off {
+  display:none;
 }
