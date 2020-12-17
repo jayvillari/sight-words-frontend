@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const wordAPI = "https://random-word-api.herokuapp.com/word?number=10";
-const definitionAPI = "https://www.dictionaryapi.com/api/v3/references/collegiate/json/"; //voluminous?key=your-api-key"
+const definitionAPI = "https://www.dictionaryapi.com/api/v3/references/collegiate/json/";
 const definitionKey = process.env.REACT_APP_MW_API_KEY;
 const definitions = [];
 

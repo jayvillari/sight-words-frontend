@@ -20,7 +20,7 @@ function App() {
           <Route path="/child/:mode" component={Child} />
           <Route path="/adult/:mode" component={Adult} />
           <Route path="/instructions" component={Instructions} />
-          <Route path="/login" component={Dictaphone} /> 
+          <Route path="/login" component={Game} /> 
         </Switch>
       </Router>
     </div>

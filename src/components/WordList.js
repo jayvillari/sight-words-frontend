@@ -22,6 +22,7 @@ class WordList extends Component {
         words: getWords(),
         numWords: 10,
       })
+      this.props.setWords(getWords());
       this.props.setNumWords(10);
     } else {
     this.getWords().then((result) => {
