@@ -136,6 +136,7 @@ svg {
 }
 a:hover {
   color: #dcdcdc;
+  text-decoration: none;
 }
 .xeejZ:hover {
   background: #28a745 !important;
