@@ -5,9 +5,9 @@ Application offering Sight Word practice for Children and Word expansion for Tee
 
 ---
 
-[[_TOC_]]
+[Site Words Demo](https://site-words-app.herokuapp.com)
 
-## <br>
+[API](site-words.herokuapp.com/child)
 
 ### MVP
 
