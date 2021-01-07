@@ -7,7 +7,7 @@ Application offering Sight Word practice for Children and Word expansion for Tee
 
 [Site Words Demo](https://site-words-app.herokuapp.com)
 
-[API](site-words.herokuapp.com/child)
+[API](https://site-words.herokuapp.com/child)
 
 ### MVP
 
